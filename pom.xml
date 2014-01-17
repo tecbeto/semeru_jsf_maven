@@ -31,6 +31,18 @@
             <name>PrimeFaces Maven Repository</name>
             <url>http://repository.primefaces.org</url>
             <layout>default</layout>
+        </repository>
+        
+        <!-- MAVEN REPOSITORY -->
+        <repository>
+            <id>mvn-repository</id>
+            <url>http://mvnrepository.com/</url>
+        </repository>
+        
+        <!-- MAVEN SEARCH REPOSITORY -->
+        <repository>
+            <id>mavensearch</id>
+            <url>http://www.mvnsearch.org/maven2</url>
         </repository>        
                 
         <!-- FACELETS TAGLIBRARIES REPOSITORY -->
@@ -50,18 +62,6 @@
         <repository>
             <id>no-snapshotsd</id>
             <url>http://nakedobjects.sourceforge.net/m2-repo/snapshot/</url>
-        </repository>
-
-        <!-- MAVEN REPOSITORY -->
-        <repository>
-            <id>mvn-repository</id>
-            <url>http://mvnrepository.com/</url>
-        </repository>
-
-        <!-- MAVEN SEARCH REPOSITORY -->
-        <repository>
-            <id>mavensearch</id>
-            <url>http://www.mvnsearch.org/maven2</url>
         </repository>
 
         <!-- SPRING REPOSITORY -->
@@ -302,9 +302,9 @@
         <!-- #### HIBERNATE-COMMONS-ANNOTATIONS #### -->
         <dependency>
             <artifactId>hibernate-commons-annotations</artifactId>
-            <groupId>org.hibernate.common</groupId>
+            <groupId>org.hibernate</groupId>
             <type>jar</type>
-            <version>${hibernate.version}</version>
+            <version>3.3.0.ga</version>
         </dependency>
         
         <!-- ############# HIBERNATE-JPA ########### -->
@@ -333,11 +333,10 @@
         
         <!-- ######## JBOSS-TRANSACTION-API ######## -->
         <dependency>
-            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
-            <groupId>org.jboss.spec.javax.transaction</groupId>
-            <type>jar</type>
-            <version>1.0.0.Final</version>
-        </dependency>      
+        	<groupId>org.jboss.spec.javax.transaction</groupId>
+        	<artifactId>jboss-transaction-api_1.1_spec</artifactId>
+        	<version>1.0.1.Final</version>
+        </dependency>   
                 
         <!-- ##### JPA-HIBERNATE-ENTITYMANAGER ##### -->                        
         <dependency>
