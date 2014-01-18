@@ -16,7 +16,7 @@
         <jstl.version>1.2</jstl.version>
         <postgres.version>9.3-1100-jdbc41</postgres.version>
         <groovy-all.version>1.7.5</groovy-all.version>
-        <hibernate.version>4.3.0.Final</hibernate.version>
+        <hibernate.version>4.0.1.Final</hibernate.version>
         <slf4j.version>1.6.4</slf4j.version>
         <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>   
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
